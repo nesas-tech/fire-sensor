@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nesas Tech | Fire Sensor",
+  title: "Fire Sensor | Nesas Tech",
   description: "",
 };
 
@@ -13,10 +13,13 @@ import Sidebar from "@/components/common/sidebar";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" type="image/ico" href="/static/logo-tech.svg" />
+      </head>
       <body className={clsx(inter.className, "flex")}>
         <Sidebar />
-        <main className="w-full">{children}</main>
+        <main className="w-full pl-20">{children}</main>
       </body>
     </html>
   );

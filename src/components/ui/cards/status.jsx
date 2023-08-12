@@ -1,18 +1,42 @@
-import clsx from "clsx";
+"use client";
 
+import { useEffect } from "react";
+import clsx from "clsx";
 import Image from "next/image";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const StatusCard = ({ title, image, level, result }) => {
+  const classNames = [];
+  switch (title) {
+    case "HUMIDITY":
+      classNames.push("bg-tertiary text-secondary");
+      break;
+    case "GAS RESISTANCE":
+      classNames.push("bg-secondary text-white");
+      break;
+    case "APPROX ALTITUDE":
+      classNames.push("text-white");
+      break;
+    default:
+      classNames.push("text-secondary");
+      break;
+  }
+
+  useEffect(() => {
+    AOS.init({
+      delay: 400,
+      once: true,
+      duration: 500,
+    });
+  }, []);
+
   return (
     <figure
+      data-aos="zoom-in-up"
       className={clsx(
-        title == "HUMADITY" && "bg-tertiary",
-        title == "GAS RESISTANCE" && "bg-secondary",
-        title == "GAS RESISTANCE"
-          ? "text-white"
-          : title == "APPROX ALTITUDE"
-          ? "text-white"
-          : "text-secondary",
+        classNames,
         "relative rounded-2xl h-[225px] overflow-hidden w-full"
       )}
     >
