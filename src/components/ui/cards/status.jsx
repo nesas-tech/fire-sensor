@@ -7,7 +7,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const StatusCard = ({ title, image, level, result }) => {
+const StatusCard = ({ title, image, level, result, symbol }) => {
   const classNames = [];
   switch (title) {
     case "HUMIDITY":
@@ -50,7 +50,9 @@ const StatusCard = ({ title, image, level, result }) => {
       <figcaption className="relative z-10 m-5 space-y-2">
         <h2 className="text-lg font-medium">{title}</h2>
         <div className="space-y-2 text-2xl font-semibold">
-          <p className={clsx(result == null && "hidden")}>{result}</p>
+          <p className={clsx(result == null && "hidden")}>
+            {result} {symbol}
+          </p>
           <p className={clsx(level == null && "hidden")}>{level}</p>
         </div>
       </figcaption>

@@ -34,7 +34,7 @@ const Chart = () => {
   };
   return (
     <section>
-      <Area {...config} />;
+      <Area {...config} />
     </section>
   );
 };
