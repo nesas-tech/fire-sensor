@@ -1,6 +1,6 @@
 const Loading = () => {
   return (
-    <div className="absolute h-screen z-50 right-[47%] top-0 transform translate-x-[50%] translate-y-[50%]">
+    <div className="absolute h-screen z-50 right-[40%] sm:right-[47%] top-0 transform translate-x-[50%] translate-y-[50%]">
       <svg
         className="w-14 h-14 text-yellow animate-spin"
         xmlns="http://www.w3.org/2000/svg"

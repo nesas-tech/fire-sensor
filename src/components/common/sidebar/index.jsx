@@ -17,7 +17,7 @@ const Sidebar = () => {
         <div>
           <Link
             className="text-xs w-[80px] lg:w-[120px] space-y-2 flex flex-col items-center font-semibold hover:bg-[#353C45] py-5 text-white"
-            href="/"
+            href="/history"
           >
             <Image
               src="/static/icons/history.svg"
