@@ -23,9 +23,9 @@ export const persentase = [
   {
     title: "AIR PRESSURE",
     image: "/static/images/air-pressure.png",
-    level: "Mooderate",
-    result: null,
-    symbol: "",
+    level: null,
+    result: 203.2,
+    symbol: "P",
   },
   {
     title: "APPROX ALTITUDE",
@@ -33,5 +33,12 @@ export const persentase = [
     level: null,
     result: 27.77,
     symbol: "Mdpl",
+  },
+  {
+    title: "LIGHT LEVEL",
+    image: "/static/images/light-level.png",
+    level: null,
+    result: 29.02,
+    symbol: "Lux",
   },
 ];

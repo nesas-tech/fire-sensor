@@ -19,6 +19,9 @@ const StatusCard = ({ title, image, level, result, symbol }) => {
     case "APPROX ALTITUDE":
       classNames.push("text-white");
       break;
+    case "LIGHT LEVEL":
+      classNames.push("text-white");
+      break;
     default:
       classNames.push("text-secondary");
       break;

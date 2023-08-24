@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <aside className="flex fixed w-[80px] lg:w-[120px] flex-col items-center justify-center h-screen text-center bg-secondary z-50 mr-10 lg:mr-0">
+    <aside className="flex fixed w-[80px] left-0 lg:w-[120px] flex-col items-center justify-center h-screen text-center bg-secondary z-50 mr-10 lg:mr-0">
       <nav>
         <div>
           <Link

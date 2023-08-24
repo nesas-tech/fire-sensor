@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <main className="h-full bg-[#E8F8FD]">
-      <Header />
+      <Header title="Fire Sensor" className="text-2xl lg:text-3xl" />
       {loading ? (
         <Loading />
       ) : (
