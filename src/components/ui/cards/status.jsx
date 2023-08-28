@@ -7,7 +7,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const StatusCard = ({ title, image, level, result, symbol }) => {
+const StatusCard = ({ title, image, level, result = 0, symbol }) => {
   const classNames = [];
   switch (title) {
     case "HUMIDITY":

@@ -20,14 +20,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-full bg-[#E8F8FD]">
+    <main className="h-screen bg-[#E8F8FD]">
       <Header title="Fire Sensor" className="text-2xl lg:text-3xl" />
       {loading ? (
         <Loading />
       ) : (
         <div>
           <DashboardStatus />
-          <DashboardStatusDetail />
+          {/* <DashboardStatusDetail /> */}
         </div>
       )}
     </main>

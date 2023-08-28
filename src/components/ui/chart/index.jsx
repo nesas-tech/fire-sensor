@@ -1,6 +1,7 @@
 "use client";
 
-import { Area } from "@ant-design/plots";
+// "@ant-design/charts": "^1.4.2",
+// import { Area } from "@ant-design/plots";
 import { useState, useEffect } from "react";
 
 const Chart = () => {
@@ -32,11 +33,7 @@ const Chart = () => {
       range: [0, 1],
     },
   };
-  return (
-    <section>
-      <Area {...config} />
-    </section>
-  );
+  return <section>{/* <Area {...config} /> */}</section>;
 };
 
 export default Chart;

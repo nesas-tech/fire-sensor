@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Container from "@/components/layouts/container";
-import Chart from "@/components//ui/chart/";
+// import Chart from "@/components/ui/chart/";
 
 export const DashboardStatusDetail = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ export const DashboardStatusDetail = () => {
       duration: 500,
     });
   }, []);
-  
+
   return (
     <section className="pb-16 lg:pt-5">
       <Container>
@@ -24,7 +24,7 @@ export const DashboardStatusDetail = () => {
           <h2 className="mb-10 text-2xl font-semibold lg:mb-20 lg:text-3xl text-primary">
             Detail Status
           </h2>
-          <Chart />
+          {/* <Chart /> */}
         </article>
       </Container>
     </section>

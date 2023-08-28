@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/charts": "^1.4.2",
+    "@ant-design/cssinjs": "^1.16.2",
+    "antd": "^4.24.13",
     "aos": "^3.0.0-beta.6",
     "autoprefixer": "10.4.14",
     "clsx": "^2.0.0",
